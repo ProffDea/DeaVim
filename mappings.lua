@@ -20,6 +20,8 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>m"] = { name = "Custom" },
+    ["<leader>mt"] = { "<cmd>TroubleToggle<cr>", desc= "Toggle Trouble" },
   },
   t = {
     -- setting a mapping to false will disable it
