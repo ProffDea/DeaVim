@@ -31,6 +31,10 @@ return {
     ["<leader>ht"] = { "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", desc = "Toggle harpoon" },
     ["[h"] = { "<cmd>lua require('harpoon.ui').nav_prev()<cr>", desc = "Previous harpoon" },
     ["]h"] = { "<cmd>lua require('harpoon.ui').nav_next()<cr>", desc = "Next harpoon" },
+
+    ["<leader>P"] = { name = "Peek", desc = "Peek" },
+    ["<leader>Po"] = { "<cmd>PeekOpen<cr>", desc = "Open" },
+    ["<leader>Pc"] = { "<cmd>PeekClose<cr>", desc = "Close" },
   },
   t = {
     -- setting a mapping to false will disable it
