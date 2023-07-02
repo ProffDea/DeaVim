@@ -19,7 +19,6 @@ return {
   },
   {
     "folke/trouble.nvim",
-    requires = "nvim-tree/nvim-web-devicons",
     config = function()
       require("trouble").setup()
     end,
@@ -46,5 +45,10 @@ return {
       vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
       vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
     end,
+  },
+  {
+    "neoclide/coc.nvim",
+    branch = "release",
+    run = "pnpm i --frozen-lockfile",
   },
 }
