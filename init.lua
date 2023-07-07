@@ -28,6 +28,13 @@ return {
   },
 
   lsp = {
+    -- install gdb through package manager
+    -- download and unzip cpptools-linux.vsix
+    -- https://github.com/microsoft/vscode-cpptools/releases
+    -- launch file "./extension/debugAdapters/bin/OpenDebugAD7" when starting debugger
+    setup_handlers = {
+      rust_analyzer = function(_, opts) require("rust-tools").setup { server = opts } end
+    },
     -- customize lsp formatting options
     formatting = {
       -- control auto formatting on save
