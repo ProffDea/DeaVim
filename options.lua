@@ -8,6 +8,25 @@ vim.cmd([[
   augroup END
 ]])
 
+-- For when in WSL
+if vim.fn.has("wsl") == 1 then
+  -- Official Neovim clipboard docs is slow, go with win32yank.exe
+  -- https://github.com/equalsraf/win32yank
+  -- change path as appropriate
+  vim.g.clipboard = {
+      name = 'WslClipboard',
+      copy = {
+          ["+"] = "/mnt/e/Programs/win32yank/win32yank.exe -i --crlf",
+          ["*"] = "/mnt/e/Programs/win32yank/win32yank.exe -i --crlf",
+      },
+      paste = {
+          ["+"] = "/mnt/e/Programs/win32yank/win32yank.exe -o --lf",
+          ["*"] = "/mnt/e/Programs/win32yank/win32yank.exe -o --lf",
+      },
+      cache_enabled = 0
+  }
+end
+
 return {
   opt = {
     -- set to true or false etc.
