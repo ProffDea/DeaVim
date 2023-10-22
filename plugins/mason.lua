@@ -23,6 +23,7 @@ return {
         "tailwindcss",
         "volar",
         "yamlls",
+        "clangd",
       })
     end,
   },
