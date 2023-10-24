@@ -16,12 +16,12 @@ if vim.fn.has("wsl") == 1 then
   vim.g.clipboard = {
     name = 'WslClipboard',
     copy = {
-      ["+"] = "/mnt/c/Program Files/win32yank/win32yank.exe -i --crlf",
-      ["*"] = "/mnt/c/Program Files/win32yank/win32yank.exe -i --crlf",
+      ["+"] = "/usr/local/bin/win32yank.exe -i --crlf",
+      ["*"] = "/usr/local/bin/win32yank.exe -i --crlf",
     },
     paste = {
-      ["+"] = "/mnt/c/Program Files/win32yank/win32yank.exe -o --lf",
-      ["*"] = "/mnt/c/Program Files/win32yank/win32yank.exe -o --lf",
+      ["+"] = "/usr/local/bin/win32yank.exe -o --lf",
+      ["*"] = "/usr/local/bin/win32yank.exe -o --lf",
     },
     cache_enabled = 0
   }
