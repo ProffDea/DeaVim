@@ -2,7 +2,7 @@ return {
   -- You can also add new plugins here as well:
   -- Add plugins, the lazy syntax
   {
-    "andweeb/presence.nvim",
+    "ProffDea/presence.nvim",
     config = function()
       require("presence").setup({
         neovim_image_text = "The Banana Editor",
