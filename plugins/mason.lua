@@ -20,7 +20,6 @@ return {
         "volar",
         "yamlls",
         "clangd",
-        "htmx-lsp",
       })
     end,
   },

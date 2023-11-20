@@ -16,12 +16,6 @@ return {
     end,
   },
   {
-    "folke/trouble.nvim",
-    config = function()
-      require("trouble").setup()
-    end,
-  },
-  {
     "lewis6991/gitsigns.nvim",
     config = function()
       require('gitsigns').setup({
@@ -31,17 +25,6 @@ return {
         },
         current_line_blame_formatter = '<author>, <author_time:%m/%d/%Y> - <summary>',
       })
-    end,
-  },
-  { "ThePrimeagen/harpoon" },
-  {
-    "toppair/peek.nvim",
-    event = { "VeryLazy" },
-    build = "deno task --quiet build:fast",
-    config = function()
-      require("peek").setup()
-      vim.api.nvim_create_user_command("PeekOpen", require("peek").open, {})
-      vim.api.nvim_create_user_command("PeekClose", require("peek").close, {})
     end,
   },
   {
