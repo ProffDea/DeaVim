@@ -20,4 +20,5 @@ return {
     },
   },
   { import = "astrocommunity.media.presence-nvim" },
+  { import = "astrocommunity.pack.rust" },
 }
