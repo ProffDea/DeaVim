@@ -1,0 +1,42 @@
+return {
+  --   {
+  --     "neovim/nvim-lspconfig",
+  --     opts = {
+  --       servers = {
+  --         html = {
+  --           -- yew
+  --           filetypes_include = { "rust" },
+  --         },
+  --         tailwindcss = {
+  --           -- yew
+  --           filetypes_include = { "rust" },
+  --         },
+  --       },
+  --       setup = {
+  --         html = function(_, opts)
+  --           opts.on_attach = function(client, bufnr)
+  --             if vim.bo.filetype == "html" then
+  --               formatting_callback(client, bufnr)
+  --             end
+  --             common_on_attach(client, bufnr)
+  --           end
+  --
+  --           local tw = require("lspconfig.server_configurations.html")
+  --           opts.filetypes = opts.filetypes or {}
+  --
+  --           -- Add default filetypes
+  --           vim.list_extend(opts.filetypes, tw.default_config.filetypes)
+  --
+  --           -- Remove excluded filetypes
+  --           --- @param ft string
+  --           opts.filetypes = vim.tbl_filter(function(ft)
+  --             return not vim.tbl_contains(opts.filetypes_exclude or {}, ft)
+  --           end, opts.filetypes)
+  --
+  --           -- Add additional filetypes
+  --           vim.list_extend(opts.filetypes, opts.filetypes_include or {})
+  --         end,
+  --       },
+  --     },
+  --   },
+}
