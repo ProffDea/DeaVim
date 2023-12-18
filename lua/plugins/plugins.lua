@@ -100,6 +100,11 @@ return {
     config = true,
   },
 
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+  },
+
   { "folke/persistence.nvim", enabled = false },
 
   { "iamcco/markdown-preview.nvim", enabled = false },
