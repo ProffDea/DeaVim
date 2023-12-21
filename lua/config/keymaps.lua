@@ -1,0 +1,43 @@
+vim.keymap.del("n", "<leader>l")
+vim.keymap.del("n", "<leader>L")
+vim.keymap.del("n", "<leader>K")
+vim.keymap.del("n", "<leader>-")
+vim.keymap.del("n", "<leader>`")
+vim.keymap.del("n", "<leader>|")
+vim.keymap.del("n", "<leader>bb")
+vim.keymap.del("n", "<leader>qq")
+
+vim.keymap.del("n", "<leader>fn")
+vim.keymap.del("n", "<leader>ft")
+vim.keymap.del("n", "<leader>fT")
+
+vim.keymap.del("n", "<leader><tab>l")
+vim.keymap.del("n", "<leader><tab>f")
+vim.keymap.del("n", "<leader><tab>d")
+vim.keymap.del("n", "<leader><tab><tab>")
+vim.keymap.del("n", "<leader><tab>]")
+vim.keymap.del("n", "<leader><tab>[")
+
+vim.keymap.del("n", "<leader>xl")
+vim.keymap.del("n", "<leader>xq")
+
+vim.keymap.del("n", "<leader>cd")
+vim.keymap.del("n", "<leader>cf")
+
+vim.keymap.del("n", "<leader>w-")
+vim.keymap.del("n", "<leader>w|")
+vim.keymap.del("n", "<leader>wd")
+vim.keymap.del("n", "<leader>ww")
+
+vim.keymap.del("n", "<leader>uc")
+vim.keymap.del("n", "<leader>ud")
+vim.keymap.del("n", "<leader>uf")
+vim.keymap.del("n", "<leader>uF")
+vim.keymap.del("n", "<leader>ui")
+vim.keymap.del("n", "<leader>ul")
+vim.keymap.del("n", "<leader>uL")
+vim.keymap.del("n", "<leader>ur")
+vim.keymap.del("n", "<leader>us")
+vim.keymap.del("n", "<leader>uT")
+vim.keymap.del("n", "<leader>uw")
+
