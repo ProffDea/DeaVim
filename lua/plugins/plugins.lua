@@ -57,5 +57,17 @@ return {
     "folke/todo-comments.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },
   },
-}
 
+  {
+    "stevearc/oil.nvim",
+    opts = {},
+    config = function()
+      require("oil").setup()
+    end,
+    dependencies = { "nvim-tree/nvim-web-devicons" },
+    lazy = false,
+    keys = {
+      { "<leader>o", "<cmd>Oil --float<cr>", desc = "Open file explorer" },
+    },
+  },
+}
