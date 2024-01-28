@@ -90,10 +90,10 @@ return {
       { "<leader>sW",      false },
       { "<leader>uC",      false },
 
-      { "<leader>b",       "<cmd>Telescope buffers<cr>",     desc = "Open buffer picker" },
-      { "<leader>d",       "<cmd>Telescope diagnostics<cr>", desc = "Open diagnostic picker" },
-      { "<leader>f",       "<cmd>Telescope find_files<cr>",  desc = "Open file picker" },
-      { "<leader>j",       "<cmd>Telescope jumplist<cr>",    desc = "Open jumplist picker" },
+      { "<leader>b",       "<cmd>Telescope buffers<cr>",                                             desc = "Open buffer picker" },
+      { "<leader>d",       "<cmd>Telescope diagnostics<cr>",                                         desc = "Open diagnostic picker" },
+      { "<leader>f",       function() require("telescope.builtin").find_files { hidden = true } end, desc = "Open file picker" },
+      { "<leader>j",       "<cmd>Telescope jumplist<cr>",                                            desc = "Open jumplist picker" },
     },
   },
 
@@ -195,4 +195,3 @@ return {
     },
   },
 }
-
