@@ -29,6 +29,7 @@ vim.keymap.del("n", "<leader>w|")
 vim.keymap.del("n", "<leader>wd")
 vim.keymap.del("n", "<leader>ww")
 
+vim.keymap.del("n", "<leader>ub")
 vim.keymap.del("n", "<leader>uc")
 vim.keymap.del("n", "<leader>ud")
 vim.keymap.del("n", "<leader>uf")
@@ -40,4 +41,3 @@ vim.keymap.del("n", "<leader>ur")
 vim.keymap.del("n", "<leader>us")
 vim.keymap.del("n", "<leader>uT")
 vim.keymap.del("n", "<leader>uw")
-

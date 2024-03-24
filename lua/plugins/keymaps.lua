@@ -63,6 +63,7 @@ return {
       { "<leader>fc",      false },
       { "<leader>ff",      false },
       { "<leader>fF",      false },
+      { "<leader>fg",      false },
       { "<leader>fr",      false },
       { "<leader>fR",      false },
       { "<leader><space>", false },
@@ -104,6 +105,8 @@ return {
 
       keys[#keys + 1] = { "<leader>ca", false }
       keys[#keys + 1] = { "<leader>cA", false }
+      keys[#keys + 1] = { "<leader>cc", false }
+      keys[#keys + 1] = { "<leader>cC", false }
       keys[#keys + 1] = { "<leader>cl", false }
       keys[#keys + 1] = { "<leader>cr", false }
 
@@ -154,7 +157,7 @@ return {
   },
 
   {
-    "simrat39/symbols-outline.nvim",
+    "hedyhli/outline.nvim",
     keys = {
       { "<leader>cs", false },
     },

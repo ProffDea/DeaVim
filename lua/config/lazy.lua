@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
 require("lazy").setup({
   spec = {
-    { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "LazyVim/LazyVim",                                       import = "lazyvim.plugins" },
     { import = "lazyvim.plugins.extras.editor.leap" },
     { import = "lazyvim.plugins.extras.editor.navic" },
     { import = "lazyvim.plugins.extras.editor.symbols-outline" },
@@ -27,7 +27,7 @@ require("lazy").setup({
     lazy = true,
     version = false,
   },
-  install = { colorscheme = { "catppuccin" } },
+  -- install = { colorscheme = { "catppuccin" } },
   checker = { enabled = true },
   performance = {
     rtp = {
