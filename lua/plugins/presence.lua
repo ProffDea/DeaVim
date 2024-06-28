@@ -1,6 +1,7 @@
 return {
   {
     "ProffDea/presence.nvim",
+    enabled = false,
     event = { "BufEnter" },
     config = function()
       require("presence").setup({
